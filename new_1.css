@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* 사용한 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+body {background: linear-gradient( #FFFCF3 53%, #77887F 40% );}
+#wrap {width: 1200px; margin: 0 auto;} 
+header {width: 100%; height: 100px; background: 0;}
+aside {clear: both; width: 100%; height: 800px; background: 0;}
+section {clear: both; width: 100%; height: 250px; background: 0;}
+footer {float: left; width: 50%; height: 300px; background: 0;}
+footer1 {float: left; width: 50%; height: 300px; background: 0;}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px){
+	body {background: linear-gradient( #FFFCF3 47%, #77887F 40% );}
+    #wrap {width: 80%;}
+	aside {float: none; width: 100%; height: 900px;}
+	section {float: none; width: 100%; height: 250px;}
+	footer {float: none; width: 100%; height: 200px;}
+	footer1 {float: none; width: 100%; height: 200px;}
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    #wrap {width: 80%;}
+	aside {float: none; width: 100%; height: 900px;}
+    section {float: none; width: 100%; height: 250px;}
+	footer {float: left; width: 50%; height: 300px;}
+	footer1 {float: left; width: 50%; height: 300px;}		
+}
+
+/* 화면 너비 0 ~ 375px */
+@media (max-width: 375px){
+    #wrap {width: 70%;}
+    header {height: 300px;}
+    aside {float: none; width: 100%; height: 900px;}
+    section {float: none; width: 100%; height: 250px;}
+	footer {float: none; width: 100%; height: 300px;}
+	footer1 {float: none; width: 100%; height: 300px;}	
+}
+
+/* 메뉴바 */
+.menubar {
+	margin-top: 6%;
+	margin-left: 100%;
+}
+
+input[id="menuicon"] {
+	display: none;
+}
+       
+input[id="menuicon"] + label {
+	display: block;
+	width: 40px;
+	height: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[id="menuicon"] + label span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 0px;
+	background: #998383;
+	transition: all .35s;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {top: 0;}
+input[id="menuicon"] + label span:nth-child(2) {top: 50%; transform: translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3) {bottom: 0;}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {top: 50%; transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity: 0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+/* 타이틀 */
+.title {
+	color: #7A5C5C;
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	font-size: 90px;
+}
+
+/* 부제목 */
+.subhead {
+	width: 500px;
+	color: #998383;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 18px;
+	text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1.3px solid #998383;
+    border-top: 1.3px solid #998383;
+	padding: 10px 0 10px 0;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+/* 메인 사진 */
+.main_t1 {
+	text-align: center;
+	margin-top: 5%;
+}
+
+/* 타원 + 텍스트 */
+.tawon {
+	width: 600px;
+    height: 57%;
+	border: 1px solid #FFFCF3;
+    border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 2%;
+	
+	
+	text-align: center;
+	color: #FFFCF3;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 27px;
+}
+
+/* 메인 본문 한글 */
+.t_2 {
+	width: 510px;
+	font-size: 16px;
+	text-align: justify;
+	color: #FFFCF3;
+	font-family: "AppleSDGothicNeoL00";
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+/* 메인 본문 영어 */
+.t_3 {
+	width: 510px;
+	font-size: 17px;
+	text-align: justify;
+	color: #FFFCF3;
+	font-family: "AppleSDGothicNeoL00";
+	margin: 0 auto;
+    margin-top: 2%;
+	margin-bottom: 100px;
+}
+
+/* 바닥 텍스트 */
+.last {
+	color: #FFFCF3;
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	font-size: 13px;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+
+
+

@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 사용한 글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+* {margin: 0; padding: 0;}
+body {background: #FFFCF3;}
+#wrap {width: 1200px; margin: 0 auto;} 
+header {width: 100%; height: 150px; background: 0;}
+aside {clear: both; width: 100%; height: 1200px; background: 0;}
+section {clear: both; width: 100%; height: 250px; background: 0; margin-top: 5%; }
+section1 {clear: both; width: 100%; height: 450px; background: 0; margin-top: 10%;}
+section2 {float: left; width: 100%; height: 150px; background: 0; margin-top: 10%;}
+section3 {float: left; width: 100%; height: 350px; background: 0; margin-top: 10%; text-align: center;}
+section4 {float: left; width: 100%; height: 450px; background: 0; margin-top: 10%; text-align: center;}
+section5 {float: left; width: 100%; height: 350px; background: 0; margin-top: 10%; text-align: center;}
+section7 {float: left; width: 100%; height: 100px; background: 0; margin-top: 0%; text-align: center;}
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px){
+    #wrap {width: 80%;}
+	aside {clear: both; width: 100%; height: 1320px; background: 0;}
+    section {clear: both; width: 100%; height: 250px; }
+    section1 {clear: both; width: 100%; height: 450px; margin-top: 15%;}
+	section2 {clear: both; width: 100%; height: 150px; margin-top: 15%; margin-left: 0%; text-align: center; background: 0;}
+	section3 {clear: both; width: 100%; height: 350px; margin-top: 15%; text-align: center; margin-left: 0%; background: 0;}
+	section4 {float: left; width: 100%; height: 550px; background: 0; margin-top: 10%; text-align: center;}
+	section5 {float: left; width: 100%; height: 230px; background: 0; margin-top: 10%; text-align: center;}
+	section7 {float: left; width: 100%; height: 50px; background: 0; margin-left: 0%; margin-bottom: 5%;}
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    #wrap {width: 80%;}
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px){
+    #wrap {width: 80%;}
+    header {height: 300px;}
+    aside {float: none; width: 100%; height: 300px;}
+    section {float: none; width: 100%; height: 300px;}
+}
+
+/* 메뉴바 */
+.menubar {
+	margin-top: 6%;
+	margin-left: 100%;
+}
+
+input[id="menuicon"] {
+	display: none;
+}
+       
+input[id="menuicon"] + label {
+	display: block;
+	width: 40px;
+	height: 25px;
+	position: relative;
+	cursor: pointer;
+}
+
+input[id="menuicon"] + label span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 0px;
+	background: #998383;
+	transition: all .35s;
+}
+
+input[id="menuicon"] + label span:nth-child(1) {top: 0;}
+input[id="menuicon"] + label span:nth-child(2) {top: 50%; transform: translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3) {bottom: 0;}
+
+input[id="menuicon"]:checked + label span:nth-child(1) {top: 50%; transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity: 0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+/*세로 글자*/
+.title_b {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+	color: #C7B6B2;
+	writing-mode: tb-rl;
+	width: 15%;
+    height: 600px;
+    position: fixed;
+    margin-left: -25%;
+    margin-top: 4%;
+}
+
+/* 타이틀 */
+.title {
+	color: #7A5C5C;
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	font-size: 70px;
+}
+
+/* 부제 */
+.title_s {width: 100%;
+	font-family: Vijaya;
+	font-size: 27px;
+	margin-top: 5%;
+	margin-bottom: 13%;
+	color: #C7B6B2;
+	text-align: center;
+}
+
+/* 쇼펜하우 사진 */
+.S_png {
+	text-align: center;
+}
+
+/* 쇼펜하우 내용1 */
+.K_1 {
+	width: 505px;
+	font-size: 18px;
+	text-align: justify;
+	color: #998383;
+	font-family: "AppleSDGothicNeoB00";
+	margin: 0 auto;
+
+}
+
+/* 바그너 내용2 */
+.K_2 {
+	width: 600px;
+	font-size: 18px;
+	text-align: justify;
+	color: #998383;
+	font-family:'AppleSDGothicNeoL00';
+	margin: 0 auto;
+}
+
+/* 바그너 내용3 */
+a{
+	color: #77887F;
+	font-family: "Palace Script MT";
+	font-size: 60px;
+}
+
+.K_3 {
+	width: 800px;
+	font-size: 35px;
+	text-align: center;
+	color: #998383;
+	font-family: "Cormorant SC SemiBold";
+	margin: 0 auto;
+}
+
+/* 바그너 내용4 */
+.K_4 {
+	width: 600px;
+	font-size: 18px;
+	text-align: justify;
+	color: #998383;
+	font-family: 'AppleSDGothicNeoL00';
+	margin: 0 auto;
+}
+
+/* 바그너 내용6 */
+.op_2 {
+	width: 600px;
+	font-size: 18px;
+	text-align: center;
+	color: #998383;
+	font-family:'AppleSDGothicNeoL00';
+	margin: 0 auto;
+}
+
+/* 바그너 내용7 */
+.K_7 {
+	width: 600px;
+	font-size: 18px;
+	text-align: justify;
+	color: #998383;
+	font-family:'AppleSDGothicNeoL00';
+	margin: 0 auto;
+}
+
+/* 정립 반정립 종합 */
+.K_8 {
+	font-size: 20px;
+	color: #998383;
+	font-family: Vijaya;
+	text-align: center;
+}
+
+#t1_1 {
+	margin-bottom: 3%;
+}
+
+#t1_2 {
+	margin-bottom: 3%;
+}
+
+/* 바닥 텍스트 */
+.last {
+	color: #998383;
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	font-size: 13px;
+}
