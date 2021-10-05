@@ -202,6 +202,11 @@ p{font-size: 27px;}
 	margin-top: 10%;
 	text-align: right;
 	margin-bottom: 20%;
+	transition: .5s ease;
+}
+
+.point1:hover {
+	opacity: 40%;
 }
 
 /* 바닥 텍스트 */
